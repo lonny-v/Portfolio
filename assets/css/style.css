@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+:root {
+    --primary-color: #badcec;
+    --secondary-color: #1e3661;
+    --tertiary-color: #7dbcdf;
+    --quad-color: #0373c9;
+    --quin-color: #03bcc9;
+}
+
+body {
+    background-image: linear-gradient(var(--secondary-color), var(--quin-color));
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 50px;
+    background-image: url(../images/IMG_8662.JPG);
+    background-size: 100%;
+}
+
+
+header h1 {
+    font-weight: bold;
+    font-size: 50px;
+    color: var(--secondary-color);
+    margin: 0;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1.0);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+header nav {
+    margin: 10px 10px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 40px;
+    font-weight: bold;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+}
+
+.body-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: stretch;
+    width: 98%;
+    font-size: 24px;
+    margin: 25px 0;
+}
+
+.body-title {
+    display: flex;
+    width: 20%;
+    background-image: linear-gradient(var(--tertiary-color), var(--primary-color));
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-radius: 10px 0 0 10px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.body-title h2 {
+    padding: 20px;
+}
+
+.body-content {
+    display: flex;
+    width: 70%;
+    background-color: var(--primary-color);
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 0 10px 10px 0;
+    padding: 10px;
+}
+
+.body-content p {
+    padding: 10px;
+}
+
+.body-content img {
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+.contact-links {
+    display: flex;
+    margin: auto;
+}
+
+.contact-links li {
+    margin: 0 75px;
+    padding: 10px;
+    list-style: none;
+}
+
+.work-tiles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 20%;
+    justify-content: center;
+}
+
+
+.big-tile {
+    display: flex;
+    flex-wrap: wrap;
+    width: 940px;
+    height: 500px;
+    background-image: url(../images/hero-bg.jpeg);
+    background-size: 100% 500px;
+    border: 2px solid black;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+/*.small-tiles :hover{
+    color: var(--tertiary-color);
+    background: var(--secondary-color);
+}
+*/
+
+.small-tiles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: flex-end;
+    width: 98%;
+    padding: 20px;
+}
+
+.small-tile-1 {
+    display: flex;
+    background-image: url(../images/digital-marketing-meeting.jpg);
+    background-size: 450px 300px;
+    height: 150px;
+    width: 450px;
+    border: 2px solid black;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.small-tile-2 {
+    display: flex;
+    background-image: url(../images/IMG_8712.JPG);
+    background-size: 150% 350%;
+    height: 150px;
+    width: 450px;
+    border: 2px solid black;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.small-tile-3 {
+    display: flex;
+    background-image: url(../images/IMG_0242.jpeg);
+    height: 150px;
+    width: 450px;
+    border: 2px solid black;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.small-tile-4 {
+    display: flex;
+    background-image: url(../images/IMG_9089.JPG);
+    height: 150px;
+    width: 450px;
+    border: 2px solid black;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.small-banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    background-image: linear-gradient(var(--secondary-color), var(--quin-color));
+    height: 33%;
+    width: 40%;
+    border-radius: 0 5px 5px 0;
+    border-top: 2px solid var(--secondary-color);
+    border-right: 2px solid var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    box-shadow: 1px 3px 7px;
+    position: relative;
+    top: 15%;
+}
+
+.small-banner p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    text-align: right;
+}
+
+.big-banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-self: flex-end;
+    background-image: linear-gradient(var(--secondary-color), var(--quin-color));
+    height: 20%;
+    width: 30%;
+    border-radius: 0 5px 5px 0;
+    border-top: 2px solid var(--secondary-color);
+    border-right: 2px solid var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    box-shadow: 1px 3px 7px;
+    position: relative;
+    bottom: 15%;
+}
+
+.big-banner p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    text-align: right;
+}
